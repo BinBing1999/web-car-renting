@@ -1,0 +1,9 @@
+<?php
+//即使是注销时，也必须首先开始会话才能访问会话变量
+session_start();
+//使用一个会话变量检查登录状态   
+    //使用内置session_destroy()函数调用撤销会话
+    session_destroy();
+//浏览器重定向到另一个页面
+header('Location:index.html');
+?>

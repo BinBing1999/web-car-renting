@@ -1,0 +1,174 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .waiwei {
+            width: 350px;
+            height: 400px;
+            background-color: beige;
+        }
+
+        .daohang {
+            width: 30px;
+            height: 400px;
+            margin-left: 5px;
+            background-color: aquamarine;
+            float: left;
+        }
+
+        .neirong {
+            width: 300px;
+            height: 400px;
+            float: left;
+            margin-left: 6px;
+            background-color: cornflowerblue;
+        }
+
+        .daohang ul {
+            padding-left: 0px;
+            margin-left: 0px;
+            list-style-type: none;
+        }
+
+        .daohang ul li {
+            text-align: center;
+            margin-top: 30px;
+            background-color: cornflowerblue;
+            height: 60px;
+            width: 28px;
+            padding-top: 20px;
+            float: left;
+
+        }
+
+        .neirong ul {
+            list-style-type: none;
+            padding-left: 0px;
+            margin: 0px;
+        }
+
+        .neirong ul li {
+            margin-top: 13.5px;
+            padding-top: 1px;
+            font-size: 1.5em;
+            height: 28px;
+            background-color: chocolate;
+            text-align: center;
+        }
+
+        #lvyou {
+            display: block;
+
+        }
+
+        #xuexi {
+            display: none;
+        }
+
+        #kanshu {
+            display: none;
+        }
+    </style>
+    <script>
+        function overr(ss, obj) {
+            if (ss == "lvyou") {
+                lvyou.style.display = "block";
+                xuexi.style.display = "none";
+                kanshu.style.display = "none";
+                obj.style.backgroundColor = "#FF9D00";
+            } else if (ss == "xuexi") {
+                xuexi.style.display = "block";
+                lvyou.style.display = "none";
+                kanshu.style.display = "none";
+                obj.style.backgroundColor = "#FF9D00";
+
+            } else if (ss == "kanshu") {
+                kanshu.style.display = "block";
+                lvyou.style.display = "none";
+                xuexi.style.display = "none";
+                obj.style.backgroundColor = "#FF9D00";
+
+            }
+        }
+        function outt(obj){
+            obj.style.backgroundColor="#6495ED";
+
+        }
+    </script>
+</head>
+<body>
+<center>
+<div class="waiwei">
+    <div class="daohang">
+        <ul>
+            <li onmouseover="overr('lvyou',this);" onmouseout="outt(this);">旅游</li>
+            <li onmouseover="overr('xuexi',this);" onmouseout="outt(this);">学习</li>
+            <li onmouseover="overr('kanshu',this);" onmouseout="outt(this);">看书</li>
+        </ul>
+    </div>
+    <div id="lvyou" class="neirong">
+        <ul>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+            <li>旅游旅游旅游旅游</li>
+        </ul>
+    </div>
+    <div id="xuexi" class="neirong">
+        <ul>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+            <li>学习学习学习学习</li>
+        </ul>
+    </div>
+    <div id="kanshu" class="neirong">
+        <ul>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+            <li>看书看书看书看书</li>
+        </ul>
+    </div>
+
+
+</div>
+</center>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onclick="func1(this)">hello p</p>
+
+<script>
+    function func1(self){
+        alert(self.innerHTML);
+    }
+
+</script>
+</body>
+</html>
